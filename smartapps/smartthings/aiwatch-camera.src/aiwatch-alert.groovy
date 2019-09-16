@@ -27,7 +27,7 @@ definition(
 
 preferences {
   section ("Allow external service to control these things...") {
-    input "switches", "capability.switch", multiple: true, required: true
+    input "switches", "capability.switch", multiple: false, required: true
   }
 }
 
