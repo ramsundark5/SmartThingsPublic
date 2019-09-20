@@ -65,6 +65,9 @@ void updateSwitches() {
     switch(command) {
         case "on":
             switches.on()
+            log.debug "switch turned on"
+            switches.off([delay: 5000])
+            log.debug "switch turned off"
             break
         case "off":
             switches.off()
